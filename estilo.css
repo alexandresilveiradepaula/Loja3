@@ -1,0 +1,42 @@
+body {
+  background: url(../img/bg.jpg) no repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.caixa {
+  background: rgba(255, 255, 255, 0.8);
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 30px 15px;
+  border-radius: 3px;
+}
+
+.menu-estilo {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 400;
+  margin: 0 auto;
+  display: table;
+  font-size: 1.25em;
+}
+
+.form-estilo {
+  max-width: 330 px;
+  padding: 15px;
+  margin: auto;
+}
+
+.titulo {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+.centralizado {
+  text-align: center;
+}

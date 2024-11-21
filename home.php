@@ -100,14 +100,32 @@ $c->home();
                         ?>
                         <tr>
                             <td><?php echo $item['codigo'];?></td>
+                            <td><?php echo $item['nome'];?></td>
+                            <td>
+                                <form method="post">
+                                    <input type="hidden" name="codProduto" value="<?php echo $item['codigo'];?>"/>
+                                    <button name="excluirItem" class="btn btn-danger" type="submit">
+                                        <span class="glyphicon glyphicon-remove"></span>Excluir
+                                    </button>
+                                </form>
+                            </td>
                         </tr>
+                        <?php
                     }
                 }
+                ?>
             </tbody>
         </table>
     </section>
-        </div>
-    </div>
-    
+    <section class="col-md-6 caixa">
+        <h3 class="titulo">Indicar para um amigo</h3>
+        <form method="post" class="form-estilo">
+            <p><input type="text" class="form-control" name="nome" placeholder="Nome" required/></p>
+            <p><input type="email" class="form-control" name="email" placeholder="Email" required/></p>
+            <p><button name="enviaEmail" class="btn btn-lg btn-info btn-block" type="submit">Indicar</button></p>
+        </form>
+        </section>
+            </div>
+            </div>
 </body>
 </html>
